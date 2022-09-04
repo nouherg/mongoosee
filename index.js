@@ -94,7 +94,7 @@ const findRemoveById= (Id)=>{
 
 // MongoDB and Mongoose - Delete Many Documents with model.remove():
 const removeManyPerson=(Name)=>{
-  user.remove({name: Name}, (err, data)=>{
+  user.removeMany({name: Name}, (err, data)=>{
       err? console.log(err): console.log(data)
   })
   } 
